@@ -1,0 +1,9 @@
+﻿@model HomeViewModel
+
+<h1>TOP Stickers</h1>
+<div class="row mt-5 mb-2">
+    @{
+        foreach (Sticker sticker in Model.favSticker) //перебираем обьект
+            @Html.Partial("Allstickers", sticker)
+    }
+</div>
